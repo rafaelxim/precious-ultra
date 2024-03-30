@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "templates",
+  "info": {
+    "singularName": "template",
+    "pluralName": "templates",
+    "displayName": "Template",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "menus": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::menu.menu",
+      "mappedBy": "template"
+    },
+    "chefs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::chef.chef",
+      "mappedBy": "template"
+    },
+    "sliders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::slider.slider",
+      "mappedBy": "template"
+    },
+    "about": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::about.about",
+      "inversedBy": "template"
+    },
+    "single_data_restaurant_one": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::single-data-restaurant-one.single-data-restaurant-one",
+      "inversedBy": "template"
+    },
+    "menu_sections": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::menu-section.menu-section",
+      "mappedBy": "template"
+    }
+  }
+}

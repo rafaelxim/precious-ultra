@@ -1,0 +1,134 @@
+{
+  "kind": "collectionType",
+  "collectionName": "single_data_restaurant_ones",
+  "info": {
+    "singularName": "single-data-restaurant-one",
+    "pluralName": "single-data-restaurant-ones",
+    "displayName": "SingleDataRestaurantOne",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "diferencial1": {
+      "type": "string"
+    },
+    "diferencial2": {
+      "type": "string"
+    },
+    "diferencial3": {
+      "type": "string"
+    },
+    "descDiferencial1": {
+      "type": "string"
+    },
+    "descDiferencial2": {
+      "type": "string"
+    },
+    "descDiferencial3": {
+      "type": "string"
+    },
+    "paralax1_title": {
+      "type": "text"
+    },
+    "paralax1_img_1540x645": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "paralax1_video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "template": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::template.template",
+      "mappedBy": "single_data_restaurant_one"
+    },
+    "cardapioDesc": {
+      "type": "text"
+    },
+    "cardapioImg_630x500": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "phone": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "youtube": {
+      "type": "string"
+    },
+    "logo250x44": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "reservaText": {
+      "type": "text"
+    },
+    "reservaImg_1540x798": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "galeriaText": {
+      "type": "text"
+    },
+    "galeriaImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "endereco": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "mapsLink": {
+      "type": "text"
+    },
+    "footerImg_1540x652": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

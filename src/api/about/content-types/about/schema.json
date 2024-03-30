@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "About",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titulo1": {
+      "type": "string"
+    },
+    "paragrafo1": {
+      "type": "text"
+    },
+    "paragrafo2": {
+      "type": "text"
+    },
+    "titulo2": {
+      "type": "string"
+    },
+    "titulo3": {
+      "type": "string"
+    },
+    "paragrafo3": {
+      "type": "text"
+    },
+    "img1_520x540": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "img2_410x390": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "img3_630x460": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "img4_300x300": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "template": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::template.template",
+      "mappedBy": "about"
+    },
+    "cardapioDesc": {
+      "type": "text"
+    },
+    "cardapioImg": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
