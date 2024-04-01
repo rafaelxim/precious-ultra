@@ -887,8 +887,8 @@ export interface ApiMenuMenu extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    name: Attribute.String & Attribute.Required & Attribute.Unique;
-    url: Attribute.String & Attribute.Required & Attribute.Unique;
+    name: Attribute.String & Attribute.Required;
+    url: Attribute.String & Attribute.Required;
     template: Attribute.Relation<
       'api::menu.menu',
       'manyToOne',

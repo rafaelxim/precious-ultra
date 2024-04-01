@@ -15,11 +15,11 @@
     "name": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "url": {
       "type": "string",
-      "unique": true,
+      "unique": false,
       "required": true
     },
     "template": {
