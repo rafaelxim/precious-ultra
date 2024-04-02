@@ -38,5 +38,5 @@ module.exports = [
   "strapi::session",
   "strapi::favicon",
   "strapi::public",
-  { resolve: "../src/middlewares/admin-redirect" },
+  { resolve: "../src/middlewares/admin-redirect.js" },
 ];
