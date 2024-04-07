@@ -815,8 +815,6 @@ export interface ApiAboutAbout extends Schema.CollectionType {
       'oneToOne',
       'api::template.template'
     >;
-    cardapioDesc: Attribute.Text;
-    cardapioImg: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -847,19 +845,9 @@ export interface ApiChefChef extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    facebook: Attribute.String;
-    twitter: Attribute.String;
-    instagram: Attribute.String;
     nome: Attribute.String;
     img_410x410: Attribute.Media;
     cargo: Attribute.String;
-    detalhes: Attribute.Text;
-    habilidade1: Attribute.String;
-    habilidade2: Attribute.String;
-    habilidade3: Attribute.String;
-    pctHabilidade1: Attribute.Integer;
-    pctHabilidade2: Attribute.Integer;
-    pctHabilidade3: Attribute.Integer;
     template: Attribute.Relation<
       'api::chef.chef',
       'manyToOne',

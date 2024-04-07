@@ -12,15 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "facebook": {
-      "type": "string"
-    },
-    "twitter": {
-      "type": "string"
-    },
-    "instagram": {
-      "type": "string"
-    },
     "nome": {
       "type": "string"
     },
@@ -34,27 +25,6 @@
     },
     "cargo": {
       "type": "string"
-    },
-    "detalhes": {
-      "type": "text"
-    },
-    "habilidade1": {
-      "type": "string"
-    },
-    "habilidade2": {
-      "type": "string"
-    },
-    "habilidade3": {
-      "type": "string"
-    },
-    "pctHabilidade1": {
-      "type": "integer"
-    },
-    "pctHabilidade2": {
-      "type": "integer"
-    },
-    "pctHabilidade3": {
-      "type": "integer"
     },
     "template": {
       "type": "relation",

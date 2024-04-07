@@ -67,16 +67,6 @@
       "relation": "oneToOne",
       "target": "api::template.template",
       "mappedBy": "about"
-    },
-    "cardapioDesc": {
-      "type": "text"
-    },
-    "cardapioImg": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
     }
   }
 }
